@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="6dp"
+    android:layout_marginTop="12dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="TODO"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:text="Example application"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/alfa_slab_one" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLine"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Description"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/CantidadTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondLine"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Cantidad"
+        android:textSize="16sp" />
+</RelativeLayout>
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="play_button_description">Play game</string>
+    <string name="app_name">Login&amp;Register</string>
+    <string name="search_anything">Search anything ...</string>
+    <string name="items">Items</string>
+    <string name="skins">Skins</string>
+    <string name="see_all">See all</string>
+    <string name="qty">Qty.</string>
+    <string name="todo">TODO</string>
+</resources>
