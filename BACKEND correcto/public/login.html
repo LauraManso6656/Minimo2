@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script type="module" src="main.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-image: url('imagenes/fondo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <header style="background-color: black; background-size: cover; background-position: center; color: white;" class = "sticky-top">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <a href="index" class="logo">
+                <img src="imagenes/logo.png" alt="TocaBolas" style="height: 50px;">
+            </a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link boton2 text-white" href="index">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link boton2 text-white" href="#">About Us</a></li>
+                <li id = "idBotonLogin" class="nav-item"><a class="nav-link boton2 text-secondary" href="#">Conectate</a></li>
+                <li id = "idBotonTienda" class="nav-item"><a class="nav-link boton2 text-white" href="store">Tienda</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container d-flex justify-content-center align-items-center " style="min-height: 80vh;">
+
+        <div id="uiverse-login" class="terminal-loader-inicio">
+            <div class="terminal-header-inicio">
+                <div class="terminal-title-inicio">TocaBolas</div>
+                <div class="terminal-controls-inicio">
+                    <div class="control-inicio close"></div>
+                    <div class="control-inicio minimize"></div>
+                    <div class="control-inicio maximize"></div>
+                </div>
+            </div>
+            <div class="text-inicio">Iniciando Sesión...</div>
+        </div>
+
+        <div id="cuadro-login" class="card p-4 shadow rounded-4 marco-negro" style="width: 100%; max-width: 400px;">
+            <h2 class="text-center mb-4 fuentetitulos">Iniciar Sesión</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label"><b>Correo electrónico</b></label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail.com">
+                    <div id="error-cincompleto-login" class="text-danger" style="display:none;">Campo incompleto!</div>
+
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label"><b>Contraseña</b></label>
+                    <input type="password" class="form-control" id="password" placeholder="*******">
+                    <div id="error-pincompleto-login" class="text-danger" style="display:none;">Campo incompleto!</div>
+                    <div id="error-datos-login" class="text-danger" style="display:none;">Correo o Contraseña incorrecto!</div>
+                </div>
+                <button id = "inicioBtn" type="submit" class="btn btn-primary w-100 mb-3"><b>Ingresar</b></button>
+            </form>
+            <div class="text-center">
+                <span>¿No tienes cuenta? </span><a href="registro"><b>Regístrate</b></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+<br>
+<footer class="footer-area" style="background-color: rgba(0, 0, 0, 0.85); color: white; padding: 20px 0; text-align: center; width: 100%;">
+    <div class="footer-content" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; font-size: 14px;">
+        <p>© 2025 TOCABOLAS. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+</html>
